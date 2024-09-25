@@ -1,3 +1,7 @@
+
+#! DOCS FOR LEARNING
+# * https://selenium-python.readthedocs.io/locating-elements.html
+
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
