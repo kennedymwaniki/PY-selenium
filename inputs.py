@@ -17,8 +17,24 @@ chrome_browser.get(
 
 
 # getting inputs
-email = chrome_browser.find_element(By.ID, 'form-group--1')
+name = chrome_browser.find_element(By.ID, 'form-group--1')
+name.clear()
+name.send_keys("Kennedy")
+
+email = chrome_browser.find_element(By.ID, 'form-group--3')
 email.clear()
-email.send_keys("Kennedymwaniki")
+email.send_keys("your email")
+
+password = chrome_browser.find_element(By.ID, 'form-group--3')
+password.clear()
+password.send_keys("password")
+
+
+# get button for signing up and simulate click
+sign_up_button = chrome_browser.find_element(
+    By.CLASS_NAME, 'ud-btn ud-btn-large ud-btn-brand ud-heading-md helpers--auth-submit-button--W3Tqk')
+
+# click event
+sign_up_button.click()
 # Close the browser after finishing
 # chrome_browser.quit()
