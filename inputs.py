@@ -42,3 +42,6 @@ sign_up_button = chrome_browser.find_element(
 sign_up_button.click()
 # Close the browser after finishing
 chrome_browser.quit()
+
+# you can run it twice if it fails
+# chrome_browser.close()

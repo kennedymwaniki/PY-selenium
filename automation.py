@@ -1,3 +1,9 @@
+
+
+# read on waits to avoid banning or suspecting of being a robot
+#! DOCS FOR LEARNING
+# * https://selenium-python.readthedocs.io/locating-elements.html
+
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
@@ -28,5 +34,9 @@ print(chrome_browser.title)
 print(chrome_browser)
 
 
-# Close the browser after finishing
+# Close the browser/driver after finishing
 chrome_browser.quit()
+
+
+# close a single window
+# chrome_browser.close()
